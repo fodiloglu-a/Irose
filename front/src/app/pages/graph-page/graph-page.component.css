@@ -1,0 +1,28 @@
+h2{
+  margin-left: 15rem;
+  margin-bottom: 3rem;
+  color: #333333;
+}
+.btn-group{
+
+
+}
+.btn{
+  background-color: #F9D401;
+  width: 10rem;
+  text-align: center;
+  padding: 1.4rem;
+  margin: 2rem;
+  color: #333333;
+  height: 5rem;
+  border-radius: 1rem;
+  /* Hover durumunda stil değişikliği */
+  transition: background-color 0.3s ease; /* Pürüzsüz bir geçiş efekti ekler */
+
+  /* Hover durumunda rengi değiştir */
+  &:hover {
+    background-color: #3A3A42;
+    color: #F9D401/* Yeni arka plan rengi */}
+
+
+}

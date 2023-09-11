@@ -1,0 +1,56 @@
+<h1 class="title">WELCOME TO {{title}}</h1>
+<div class="home-container">
+
+
+  <div *ngIf="pageLoaded" class="ticker-container">
+    <div class="ticker">
+      <div class="current-content">
+        {{ currentContent}}
+      </div>
+      <hr>
+      <h5>Break News </h5>
+      <p>Lorem ipsum dolor sit amet,</p>
+      <p> Nullam eget sem quam Nullam</p>
+      <p> eu augue vel nisi viverra ullamcorper eu vel ligula.</p>
+    </div>
+  </div>
+
+
+  <table>
+    <thead>
+    <tr>
+      <th>Datum</th>
+      <th>Sifra</th>
+      <th>Exchange Rate</th>
+      <th>Oznaka</th>
+      <th>Rate Day</th>
+      <th>Rate Week</th>
+      <th>Rate Month</th>
+      <th>Rate Year</th>
+      <th>Rate Five Year</th>
+      <th>Rate All Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of currencyDTOS">
+      <td>{{ item.datum}}</td>
+      <td>{{ item.sifra }}</td>
+      <td>{{ item.exchangeRate }}</td>
+      <td>{{ item.oznaka }}</td>
+      <td [style.color]="getRateColor(item.rateDay)">
+        {{ item.rateDay }}
+      </td>
+      <td [style.color]="getRateColor(item.rateWeek)">{{ item.rateWeek }}</td>
+      <td [style.color]="getRateColor(item.rateMonth)">{{ item.rateMonth }}</td>
+      <td [style.color]="getRateColor(item.rateYear)">{{ item.rateYear }}</td>
+      <td [style.color]="getRateColor(item.rateFiveYear)">{{ item.rateFiveYear }}</td>
+      <td [style.color]="getRateColor(item.rateAllTime)">{{ item.rateAllTime }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+

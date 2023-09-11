@@ -1,0 +1,39 @@
+<h3> {{title}}</h3>
+
+
+<div class="container">
+
+  <div class="btn-group">
+    <a routerLink="/graph" class="btn btn-primary">Back Graph</a>
+  </div>
+  <div class="scond-button">
+    <input class="input-group-text" type="text" #oznakaInput placeholder="Oznaka">
+    <button class="btn-text" (click)="listenClick(oznakaInput.value)">Get graph for year</button>
+
+  </div>
+  <div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <canvas id="weakBar">{{chartBar}}</canvas>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <canvas id="weakLine">{{chartLine}}</canvas>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <canvas id="weakBubble">{{chartBubble}}</canvas>
+    </div>
+  </div>
+
+
+
+
+
+</div>

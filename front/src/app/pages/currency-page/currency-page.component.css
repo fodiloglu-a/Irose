@@ -1,0 +1,77 @@
+.graph{
+  margin: 0.5rem;
+  color: #333333;
+
+}
+
+.container-to-compare {
+
+  color: #3A3A42;
+  right: 1rem;
+  position: absolute;
+  width: 40%;
+  padding: 1rem;
+}
+
+.date {
+  margin: 0.7rem;
+  padding: 0.7rem;
+  background-color: #F9D401;
+}
+.select{
+  margin: 0.7rem;
+  padding: 0.7rem;
+  background-color: #3A3A42;
+  color: #D2D2D0;
+}
+
+.compare-result {
+  margin: 0.7rem;
+
+  padding: 1rem;
+  color: #bbbbbb;
+  border-style: solid;
+  border-color: #3A3A42;
+  background-color:#eeeeee;
+
+}
+.compare-button{
+  margin: 0.7rem;
+  font-size: larger;
+
+
+}
+
+
+table {
+  color: #333333;
+}
+
+/* Tablo başlığı (thead) stil kuralları */
+thead {
+
+
+  background-color: #333; /* Başlık arka plan rengi */
+  color: white; /* Başlık metin rengi */
+}
+
+/* Tablo hücreleri (th) stil kuralları */
+th {
+  padding: 10px; /* Hücre iç içe boşluğu */
+  text-align: left; /* Metni sola hizala */
+}
+
+/* Tablo satırları (tbody tr) arka plan renkleri sırayla değişsin */
+tbody tr:nth-child(even) {
+
+  background-color: #f2f2f2; /* Çift sıradaki satır arka plan rengi */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff; /* Tek sıradaki satır arka plan rengi */
+}
+
+/* Tablo hücreleri (td) stil kuralları */
+td {
+  padding: 10px; /* Hücre iç içe boşluğu */
+}

@@ -1,0 +1,65 @@
+/* styles.css */
+table{
+  color: #333333;
+}
+/* Tablo başlığı (thead) stil kuralları */
+thead {
+
+
+  background-color: #333; /* Başlık arka plan rengi */
+  color: white; /* Başlık metin rengi */
+}
+
+/* Tablo hücreleri (th) stil kuralları */
+th {
+  padding: 10px; /* Hücre iç içe boşluğu */
+  text-align: left; /* Metni sola hizala */
+}
+
+/* Tablo satırları (tbody tr) arka plan renkleri sırayla değişsin */
+tbody tr:nth-child(even) {
+
+  background-color: #f2f2f2; /* Çift sıradaki satır arka plan rengi */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff; /* Tek sıradaki satır arka plan rengi */
+}
+
+/* Tablo hücreleri (td) stil kuralları */
+td {
+  padding: 10px; /* Hücre iç içe boşluğu */
+}
+.button-data{
+  background-color: black;
+
+}
+.ticker-container {
+  overflow: hidden; /* İçerik dışarı taştığında gizle */
+  white-space: nowrap; /* İçeriği yatayda sırala */
+  background-color: #F9D401;
+  color: #333333;
+  height: 20rem;
+  position: absolute; /* Öğeyi sabitle */
+  top: 10rem; /* Sayfanın üstüne yerleştir */
+  right: 1rem; /* Sayfanın soluna yerleştir (isteğe bağlı) */
+  width: 25%; /* Sayfanın genişliği kadar genişlet */
+  z-index: 999;}
+.ticker{
+  padding: 1rem;
+}
+.current-content{
+
+  border-style: solid;
+  border-color: #333333;
+  background-color: #bbbbbb;
+  color: #333333;
+  padding: 1rem;
+  overflow: hidden; /* Taşan içeriği gizler */
+  white-space: nowrap;
+
+}
+.title{
+  top: 0;
+  margin: 5rem;
+}

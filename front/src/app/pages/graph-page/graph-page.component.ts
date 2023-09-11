@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+
+
+@Component({
+  selector: 'app-graph-page',
+  templateUrl: './graph-page.component.html',
+  styleUrls: ['./graph-page.component.css']
+})
+export class GraphPageComponent  {
+  title:any
+
+
+  constructor() {
+    this.title = "GRAPH PAGE";
+  }
+}

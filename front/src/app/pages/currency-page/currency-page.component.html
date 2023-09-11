@@ -1,0 +1,73 @@
+<div class="container-to-compare">
+
+  <div class="date" >
+
+    <p>Start Date: {{startDate}}</p>
+    <input   type="date" [(ngModel)]="startDate" />
+    <hr>
+    <p>End Date: {{endDate}}</p>
+    <input   type="date" [(ngModel)]="endDate" />
+  </div>
+  <div class="select">
+
+    <p>Select  :: {{sendList[0]?.oznaka}}</p>
+    <p>Select :: {{sendList[1]?.oznaka}}</p>
+  </div>
+
+  <div class="compare-button" >
+    <button (click)="getCompare()">Compare</button>
+  </div>
+
+ <div class="compare-result">
+   <div *ngFor="let item of Object.keys(profitLose)">
+     <p class="rate-result"   [style.color]="getRateColor(profitLose[item])">{{ item }}: {{ profitLose[item] }}</p>
+    </div>
+   <div class="graph">
+     <h3>{{firstName}}{{ww}}{{secondName}}</h3>
+     <canvas id="combinedChart" width="800" height="400">{{combinedCanvas}}</canvas>
+   </div>
+   <div class="graph">
+     <h3>{{firstName}}</h3>
+
+     <canvas id="first">{{firstChart}}</canvas>
+   </div>
+   <div class="graph">
+     <h3>{{secondName}}</h3>
+     <canvas id="second">{{secondChart}}</canvas>
+   </div>
+
+
+ </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Datum</th>
+    <th>Sifra</th>
+    <th>Exchange Rate</th>
+    <th>Oznaka</th>
+    <th>Seç</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of currencyDTOS; let i = index">
+    <td>{{ item.datum }}</td>
+    <td>{{ item.sifra }}</td>
+    <td>{{ item.exchangeRate }}</td>
+    <td>{{ item.oznaka }}</td>
+    <td><input type="checkbox" (click)="addSelected(item)" [(ngModel)]="item.isSelected"  /></td>
+
+  </tr>
+  </tbody>
+</table>
+
+
