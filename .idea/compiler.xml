@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="backand" />
+        <module name="irose" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="irose" target="17" />
       <module name="test" target="17" />
       <module name="untitled" target="17" />
     </bytecodeTargetLevel>

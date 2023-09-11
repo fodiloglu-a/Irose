@@ -37,13 +37,11 @@ export class MonthGraphComponent   {
     const oznaka = this.oznaka; // Replace with the oznaka value you want to fetch
     this.service.getModelByOznaka(oznaka).subscribe((response) => {
       this.data = response;
-      console.log("Reuquestte")
       this.monthGrap=response.monthGraph;
       this.createBarCart();
       this.createBubbleChart();
       this.createLineChart();
 
-      //console.log(response.weekGraph[1])
       console.log(this.monthGrap[1])
     });
   }
@@ -63,7 +61,7 @@ export class MonthGraphComponent   {
     }
     this.oznaka=oznaka;
     this.fetchData();
-    console.log('Oznaka:', oznaka);
+
   }
 
 

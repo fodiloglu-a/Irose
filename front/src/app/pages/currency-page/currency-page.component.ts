@@ -15,7 +15,7 @@ export class CurrencyPageComponent {
   response: any;
 
   public currencyDTOS: CurrentDTO[] | null = [];
-  public sendList: CurrentDTO[] = [];
+  public sendList: CurrentDTO[] |any= [];
   public check: CurrentDTO[] = [];
   startDate: Date | any;
   endDate: Date | any;
